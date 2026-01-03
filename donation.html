@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Donate to support disabled children - Your contribution makes a difference at Bhartidevi Educational Foundations">
+    <title>Donation - Bhartidevi Educational Foundations</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://scontent.fdel1-3.fna.fbcdn.net/v/t39.30808-6/536281938_1231599408980661_4412200936169957096_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=gjkQuPCE40kQ7kNvwGlQBoS&_nc_oc=AdlwFEyvvHZbw9DvLUbNexbk748pdeDhY4ejB2Y__5VZFd81U0YKXSaeegEB7zjsF1Q&_nc_zt=23&_nc_ht=scontent.fdel1-3.fna&_nc_gid=n43G-zczjl80CUElqVn-5w&oh=00_Afo3JAU4E-EGQkjPor4oEksvEy0M3Lp_TkxVqdDBG7htcw&oe=695F334E" alt="Bhartidevi Educational Foundations Logo">
+                <span class="logo-text">Bhartidevi Educational Foundations</span>
+            </a>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="volunteers.html">Volunteers</a></li>
+                <li><a href="initiatives.html">Initiatives</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 4rem 2rem;">
+        <div class="hero-content">
+            <h1>Make a Difference</h1>
+            <p style="font-size: 1.3rem;">Your donation transforms lives and creates brighter futures for children with disabilities</p>
+            <p style="font-size: 1.1rem; margin-top: 1rem; color: var(--text-light);">Every contribution, no matter how small, helps us provide education, therapy, care, and support</p>
+        </div>
+    </section>
+
+    <!-- Donation Cards -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Choose Your Contribution</h2>
+            <div class="donation-cards">
+                <div class="donation-card" data-amount="500">
+                    <div class="donation-amount">₹500</div>
+                    <h3 class="donation-title">Books & Learning Materials</h3>
+                    <p class="donation-description">Support a child's education by providing books, notebooks, and essential learning materials for a month.</p>
+                </div>
+                <div class="donation-card" data-amount="1000">
+                    <div class="donation-amount">₹1,000</div>
+                    <h3 class="donation-title">Therapy Session</h3>
+                    <p class="donation-description">Fund a complete therapy session including physical, occupational, or speech therapy for a child.</p>
+                </div>
+                <div class="donation-card" data-amount="2000">
+                    <div class="donation-amount">₹2,000</div>
+                    <h3 class="donation-title">Monthly Care Package</h3>
+                    <p class="donation-description">Provide comprehensive monthly support including nutrition, healthcare, and educational materials for a child.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Donation Form -->
+    <section class="section" style="background-color: var(--primary-yellow);">
+        <div class="container">
+            <h2 class="section-title">Donate Any Amount</h2>
+            <div class="form-container">
+                <form id="donationForm">
+                    <input type="hidden" id="selectedAmount" name="amount" value="">
+                    <div class="form-group">
+                        <label for="donorName">Your Name *</label>
+                        <input type="text" id="donorName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donorEmail">Email Address *</label>
+                        <input type="email" id="donorEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donorPhone">Phone Number</label>
+                        <input type="tel" id="donorPhone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="donationAmount">Donation Amount (₹) *</label>
+                        <input type="number" id="donationAmount" name="amount" min="100" step="100" required placeholder="Enter amount (minimum ₹100)">
+                    </div>
+                    <div class="form-group">
+                        <label for="donationMessage">Message (Optional)</label>
+                        <textarea id="donationMessage" name="message" placeholder="Leave a message of encouragement..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-donate" style="width: 100%;">Proceed to Donate</button>
+                    <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                        <em>Note: This is a frontend demo. In production, this would redirect to a secure payment gateway.</em>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact of Donation -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Your Donation Makes an Impact</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3 style="color: var(--primary-orange); margin-bottom: 1rem;">📚 Education Support</h3>
+                    <p>₹500 provides books and learning materials for one child for a month, enabling them to continue their educational journey.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--primary-green); margin-bottom: 1rem;">💚 Therapy Services</h3>
+                    <p>₹1,000 funds a complete therapy session, helping a child improve mobility, communication, or daily living skills.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--primary-orange); margin-bottom: 1rem;">🍎 Nutrition & Health</h3>
+                    <p>Your contribution ensures children receive nutritious meals and regular health check-ups for optimal development.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--primary-green); margin-bottom: 1rem;">🎯 Skill Development</h3>
+                    <p>Support vocational training and life skills programs that empower children to become independent and self-reliant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency Section -->
+    <section class="section" style="background-color: var(--light-green);">
+        <div class="container">
+            <div class="card" style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <h2 style="color: var(--primary-orange); margin-bottom: 1.5rem;">Transparency & Accountability</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                    We believe in complete transparency in how your donations are utilized. Every contribution goes directly towards 
+                    supporting our programs and the children we serve. We maintain detailed records and provide regular updates on 
+                    the impact of your donations. Your trust is our commitment to make every rupee count.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: var(--primary-orange);">95%</div>
+                        <div style="color: var(--text-dark);">Direct to Programs</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: var(--primary-green);">5%</div>
+                        <div style="color: var(--text-dark);">Administrative Costs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="https://scontent.fdel1-3.fna.fbcdn.net/v/t39.30808-6/536281938_1231599408980661_4412200936169957096_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=gjkQuPCE40kQ7kNvwGlQBoS&_nc_oc=AdlwFEyvvHZbw9DvLUbNexbk748pdeDhY4ejB2Y__5VZFd81U0YKXSaeegEB7zjsF1Q&_nc_zt=23&_nc_ht=scontent.fdel1-3.fna&_nc_gid=n43G-zczjl80CUElqVn-5w&oh=00_Afo3JAU4E-EGQkjPor4oEksvEy0M3Lp_TkxVqdDBG7htcw&oe=695F334E" alt="Bhartidevi Educational Foundations Logo">
+                    <span>Bhartidevi Educational Foundations</span>
+                </div>
+                <p>Empowering disabled and physically challenged children through education, care, and compassion.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="initiatives.html">Initiatives</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="volunteers.html">Volunteer</a></li>
+                    <li><a href="donation.html">Donate</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: <a href="mailto:bhartidevieducational@gmail.com" style="color: var(--white);">bhartidevieducational@gmail.com</a></p>
+                <p>Business: <a href="mailto:info@bhartidevieducationalfoundations.com" style="color: var(--white);">info@bhartidevieducationalfoundations.com</a></p>
+                <p>Phone: <a href="tel:+919971670692" style="color: var(--white);">+91 99716 70692</a></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/nakshhimalayan" target="_blank" rel="noopener noreferrer" aria-label="Facebook">📘</a>
+                    <a href="https://www.instagram.com/bhartidevieducation?igsh=MTB1d2I5eHVuZnRtdQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
+                    <a href="https://youtube.com/@bhartidevieducational3_2?si=bND9x9UVsW4MJMww" target="_blank" rel="noopener noreferrer" aria-label="YouTube">📺</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bhartidevi Educational Foundations. All rights reserved. | <a href="#" style="color: var(--primary-orange);">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
